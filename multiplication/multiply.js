@@ -6,4 +6,4 @@ function multiplyThree(a, b, c) {
     return a * b * c;
 }
 
-modules.export = { multiplyTwo, multiplyThree };
+module.exports = { multiplyTwo, multiplyThree };

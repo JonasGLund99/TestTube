@@ -2,4 +2,4 @@ function divide(a, b) {
     return a / b;
 }
 
-modules.export = { divide };
+module.exports = { divide };
