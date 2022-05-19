@@ -7,7 +7,7 @@ on:
     
 jobs:
   wait_for_response:
-    name: run tests
+    name: Wait for response
     runs-on: ubuntu-latest
 
     outputs:
