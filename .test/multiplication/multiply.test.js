@@ -8,7 +8,7 @@ test('Multiplying two numbers <multiplyTwo>', async () => {
 })
 test('Another one for multiply <multiplyTwo>', async () => {
     const result = await multiplyTwo(9,7);
-    expect(result).toStrictEqual(63);
+    expect(result).toStrictEqual(69);
 })
 test('Multiplying three numbers <multiplyThree>', async () => {
     const result = await multiplyThree(2,3,4);
