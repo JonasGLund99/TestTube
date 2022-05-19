@@ -1,4 +1,4 @@
-name: 'Wait for response'
+name: Wait for response
 description: 'Pause workflow until a specific response is received'
 
 inputs:
