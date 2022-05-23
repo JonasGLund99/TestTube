@@ -103,6 +103,7 @@ jobs:
       run: |
         git checkout --theirs .test/test-info.json
         git add .test/test-info.json
+        git commit -m 'merge conflict resolved'
         git rebase --continue
         git pull
         git push
