@@ -1,3 +1,74 @@
 {
-    "files": []
+  "files": [
+    {
+      "path": "lib/multiply.js",
+      "functions": [
+        {
+          "name": "multiply",
+          "comment": "",
+          "params": "a,b",
+          "async": "false",
+          "status": "2",
+          "functionString": "function multiply(a, b) {\n  return a * b;\n}",
+          "testCases": [
+            {
+              "description": "Multiply two numbers <multiply>",
+              "arguments": [
+                "5",
+                "4"
+              ],
+              "matcher": "toBe",
+              "expected": "20",
+              "passed": true
+            },
+            {
+              "description": "Multiply another two numbers <multiply>",
+              "arguments": [
+                "1",
+                "1"
+              ],
+              "matcher": "toBe",
+              "expected": "1",
+              "passed": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "lib/sum.js",
+      "functions": [
+        {
+          "name": "sum",
+          "comment": "",
+          "params": "a,b",
+          "async": "false",
+          "status": "2",
+          "functionString": "function sum(a, b) {\n  return a + b;\n}",
+          "testCases": [
+            {
+              "description": "Sum two positive numbers <sum>",
+              "arguments": [
+                "2",
+                "2"
+              ],
+              "matcher": "toBe",
+              "expected": "4",
+              "passed": true
+            },
+            {
+              "description": "Sum two negative numbers <sum>",
+              "arguments": [
+                "-3",
+                "-9"
+              ],
+              "matcher": "toBe",
+              "expected": "-12",
+              "passed": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
