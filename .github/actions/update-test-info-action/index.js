@@ -94,5 +94,5 @@ function getMainTestInfo() {
     .then(data => {
         mainTestInfo = new Buffer.from(data.content, 'base64').toString('utf-8');
     })
-    return mainTestInfo;
+    return JSON.parse(mainTestInfo);
 }
