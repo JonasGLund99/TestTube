@@ -1,3 +1,43 @@
 {
-	"files": []
+  "files": [
+    {
+      "path": "divide.js",
+      "functions": [
+        {
+          "name": "divide",
+          "comment": "This will not be tested",
+          "params": "a,b",
+          "async": "false",
+          "status": "1",
+          "functionString": "function divide(a, b) {\n  return a / b;\n}",
+          "testCases": []
+        }
+      ]
+    },
+    {
+      "path": "subtract.js",
+      "functions": [
+        {
+          "name": "subtract",
+          "comment": "",
+          "params": "a,b",
+          "async": "false",
+          "status": "2",
+          "functionString": "function subtract(a, b) {\n  return a - b;\n}",
+          "testCases": [
+            {
+              "description": "Subtract two numbers <subtract>",
+              "arguments": [
+                "5",
+                "3"
+              ],
+              "matcher": "toBe",
+              "expected": "2",
+              "passed": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
