@@ -60,7 +60,6 @@ jobs:
   update_info:
     needs: [wait_for_response, run_tests]
     runs-on: ubuntu-latest
-    continue-on-error: true
       
     steps:
     - name: Checkout
@@ -100,6 +99,7 @@ jobs:
         git rebase --continue
         git pull
         git push
+      continue-on-error: true
 
     - name: Check if test has failed
       if: steps.update-info.outputs.hasFailed == 'true'
