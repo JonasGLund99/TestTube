@@ -60,6 +60,7 @@ jobs:
   update_info:
     needs: [wait_for_response, run_tests]
     runs-on: ubuntu-latest
+    continue-on-error: true
       
     steps:
     - name: Checkout
