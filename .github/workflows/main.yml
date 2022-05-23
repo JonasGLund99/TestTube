@@ -92,15 +92,21 @@ jobs:
         git add .
         git commit -m 'Commit from TestTube'
         git push
+        
+    - name: Rebase
+      run: | 
         git pull
         git rebase origin/main
+      continue-on-error: true
+        
+    - name: Push
+      run: |
         git checkout --theirs .test/test-info.json
         git add .test/test-info.json
         git rebase --continue
         git pull
         git push
-      continue-on-error: true
-
+      
     - name: Check if test has failed
       if: steps.update-info.outputs.hasFailed == 'true'
       run: exit 1
