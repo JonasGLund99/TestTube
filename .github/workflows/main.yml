@@ -92,6 +92,7 @@ jobs:
         git add .
         git commit -m 'Commit from TestTube'
         git push
+        git pull
         git rebase origin/main
         git checkout --theirs .test/test-info.json
         git add .test/test-info.json
