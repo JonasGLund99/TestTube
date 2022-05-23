@@ -92,7 +92,7 @@ jobs:
         git add .
         git commit -m 'Commit from TestTube'
         git push
-        git merge --ours main
+        git merge -Xours main
 
     - name: Check if test has failed
       if: steps.update-info.outputs.hasFailed == 'true'
