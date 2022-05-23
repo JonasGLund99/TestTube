@@ -105,7 +105,7 @@ jobs:
         git add .test/test-info.json
         git commit -m 'merge conflict resolved'
         git rebase --continue
-        git pull
+        git pull --rebase
         git push
       
     - name: Check if test has failed
