@@ -4,7 +4,7 @@ test('Multiply two numbers <multiply>', async () => {
     const result = await multiply(5,4);
     expect(result).toBe(20);
 })
-test('Fail multiply two numbers <multiply>', async () => {
+test('Multiply another two numbers <multiply>', async () => {
     const result = await multiply(1,1);
-    expect(result).toBe(2);
+    expect(result).toBe(1);
 })
