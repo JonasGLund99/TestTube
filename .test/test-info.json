@@ -1,3 +1,64 @@
 {
-	"files": []
+  "files": [
+    {
+      "path": "sum.js",
+      "functions": [
+        {
+          "name": "sum",
+          "comment": "",
+          "params": "a,b",
+          "async": "false",
+          "status": "2",
+          "functionString": "function sum(a, b) {\n  return a + b;\n}",
+          "testCases": [
+            {
+              "description": "Hello im under da water <sum>",
+              "arguments": [
+                "10",
+                "59"
+              ],
+              "matcher": "toBe",
+              "expected": "69",
+              "passed": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "multiply.js",
+      "functions": [
+        {
+          "name": "multiply",
+          "comment": "",
+          "params": "a,b",
+          "async": "false",
+          "status": "-1",
+          "functionString": "function multiply(a, b) {\n  return a * b;\n}",
+          "testCases": [
+            {
+              "description": "Multiply some numbers <multiply>",
+              "arguments": [
+                "42",
+                "10"
+              ],
+              "matcher": "toBe",
+              "expected": "420",
+              "passed": true
+            },
+            {
+              "description": "Fail dis pls <multiply>",
+              "arguments": [
+                "69",
+                "69"
+              ],
+              "matcher": "toBe",
+              "expected": "420",
+              "passed": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
