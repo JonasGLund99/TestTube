@@ -1,3 +1,29 @@
 {
-	"files": []
+  "files": [
+    {
+      "path": "multiply.js",
+      "functions": [
+        {
+          "name": "multiply",
+          "comment": "",
+          "params": "a,b",
+          "async": "false",
+          "status": "-1",
+          "functionString": "function multiply(a, b) {\n  return a * b;\n}",
+          "testCases": [
+            {
+              "description": "multiply two numbers <multiply>",
+              "arguments": [
+                "1",
+                "1"
+              ],
+              "matcher": "toBe",
+              "expected": "2",
+              "passed": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
