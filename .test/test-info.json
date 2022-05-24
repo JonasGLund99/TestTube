@@ -1,3 +1,29 @@
 {
-	"files": []
+  "files": [
+    {
+      "path": "mult.js",
+      "functions": [
+        {
+          "name": "mult",
+          "comment": "",
+          "params": "a,b",
+          "async": "false",
+          "status": "2",
+          "functionString": "function mult(a, b) {\n  return a * b;\n}",
+          "testCases": [
+            {
+              "description": "Multiply two numbers <mult>",
+              "arguments": [
+                "10",
+                "2"
+              ],
+              "matcher": "toBe",
+              "expected": "20",
+              "passed": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
