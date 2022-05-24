@@ -101,7 +101,7 @@ jobs:
         
     - name: Push
       run: |
-        git checkout --theirs .test/test-info.json
+        git checkout --theirs .test/**
         git add .test/**
         git commit -m 'merge conflict resolved'
         git rebase --continue
