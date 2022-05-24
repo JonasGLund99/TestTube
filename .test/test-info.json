@@ -20,6 +20,16 @@
               "matcher": "toBe",
               "expected": "3",
               "passed": true
+            },
+            {
+              "description": "Sum two more nice numbers <sum>",
+              "arguments": [
+                "1",
+                "1"
+              ],
+              "matcher": "toBe",
+              "expected": "2",
+              "passed": true
             }
           ]
         }
@@ -44,6 +54,41 @@
               ],
               "matcher": "toBe",
               "expected": "20",
+              "passed": true
+            },
+            {
+              "description": "Multiply sum more numbers <multiply>",
+              "arguments": [
+                "1",
+                "1"
+              ],
+              "matcher": "toBe",
+              "expected": "1",
+              "passed": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "divide.js",
+      "functions": [
+        {
+          "name": "divide",
+          "comment": "",
+          "params": "a,b",
+          "async": "false",
+          "status": "2",
+          "functionString": "function divide(a, b) {\n  return a / b;\n}",
+          "testCases": [
+            {
+              "description": "Divide two numbers <divide>",
+              "arguments": [
+                "1",
+                "1"
+              ],
+              "matcher": "toBe",
+              "expected": "1",
               "passed": true
             }
           ]
