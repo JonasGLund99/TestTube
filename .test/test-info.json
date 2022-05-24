@@ -1,3 +1,64 @@
 {
-	"files": []
+  "files": [
+    {
+      "path": "sum.js",
+      "functions": [
+        {
+          "name": "sum",
+          "comment": "",
+          "params": "a,b",
+          "async": "false",
+          "status": "-1",
+          "functionString": "function sum(a, b) {\n  return a + b;\n}",
+          "testCases": [
+            {
+              "description": "Must work <sum>",
+              "arguments": [
+                "2",
+                "3"
+              ],
+              "matcher": "toBe",
+              "expected": "5",
+              "passed": true
+            },
+            {
+              "description": "fail <sum>",
+              "arguments": [
+                "9",
+                "8"
+              ],
+              "matcher": "toBe",
+              "expected": "10",
+              "passed": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "multiply.js",
+      "functions": [
+        {
+          "name": "multiply",
+          "comment": "",
+          "params": "a,b",
+          "async": "false",
+          "status": "0",
+          "functionString": "function multiply(a, b) {\n  return a * b;\n}",
+          "testCases": [
+            {
+              "description": "workyt <multiply>",
+              "arguments": [
+                "8",
+                "8"
+              ],
+              "matcher": "toBe",
+              "expected": "64",
+              "passed": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
