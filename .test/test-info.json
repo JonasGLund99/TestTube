@@ -24,6 +24,31 @@
           ]
         }
       ]
+    },
+    {
+      "path": "multiply.js",
+      "functions": [
+        {
+          "name": "multiply",
+          "comment": "",
+          "params": "a,b",
+          "async": "false",
+          "status": "2",
+          "functionString": "function multiply(a, b) {\n  return a * b;\n}",
+          "testCases": [
+            {
+              "description": "Multiply two numbers <multiply>",
+              "arguments": [
+                "4",
+                "5"
+              ],
+              "matcher": "toBe",
+              "expected": "20",
+              "passed": true
+            }
+          ]
+        }
+      ]
     }
   ]
 }
