@@ -2,4 +2,8 @@ function sum(a, b) {
   return a + b;
 }
 
-module.exports = { sum };
+function sumThree(a, b, c) {
+  return a + b + c;
+}
+
+module.exports = { sum, sumThree };
