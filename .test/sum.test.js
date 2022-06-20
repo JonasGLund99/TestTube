@@ -12,3 +12,7 @@ test('Sum four (this will also fail) <sumFour>', async () => {
     const result = await sumFour(2,3,4,5);
     expect(result).toBe(1);
 })
+test('This might pass though <sumFour>', async () => {
+    const result = await sumFour(1,2,3,4);
+    expect(result).toBe(10);
+})
