@@ -1,6 +1,30 @@
 {
   "files": [
     {
+      "path": "arrays.js",
+      "functions": [
+        {
+          "name": "sumArray",
+          "comment": "",
+          "params": "A",
+          "async": "false",
+          "status": "2",
+          "functionString": "function sumArray(A) {\n    let sum = 0;\n    A.forEach(element => {\n        sum += Number(element);\n    });\n\n    return sum;\n}",
+          "testCases": [
+            {
+              "description": "Sum all numbers in an array <sumArray>",
+              "arguments": [
+                "[1, 2, 3, 4]"
+              ],
+              "matcher": "toBe",
+              "expected": "10",
+              "passed": true
+            }
+          ]
+        }
+      ]
+    },
+    {
       "path": "divide.js",
       "functions": [
         {
