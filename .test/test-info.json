@@ -1,3 +1,151 @@
 {
-	"files": []
+  "files": [
+    {
+      "path": "arrays.js",
+      "functions": [
+        {
+          "name": "sumArray",
+          "comment": "hgfds",
+          "params": "A",
+          "async": "false",
+          "status": "1",
+          "functionString": "function sumArray(A) {\n    let sum = 0;\n    A.forEach(element => {\n        sum += Number(element);\n    });\n\n    return sum;\n}",
+          "testCases": []
+        }
+      ]
+    },
+    {
+      "path": "divide.js",
+      "functions": [
+        {
+          "name": "divide",
+          "comment": "HGFDSA",
+          "params": "a,b",
+          "async": "false",
+          "status": "1",
+          "functionString": "function divide(a, b) {\n    return a / b;\n}",
+          "testCases": []
+        }
+      ]
+    },
+    {
+      "path": "multiply.js",
+      "functions": [
+        {
+          "name": "multiplyTwo",
+          "comment": "HGFDS",
+          "params": "a,b",
+          "async": "false",
+          "status": "1",
+          "functionString": "function multiplyTwo(a, b) {\n    return a * b + 1;\n}",
+          "testCases": []
+        },
+        {
+          "name": "multiplyThree",
+          "comment": "hgfds",
+          "params": "a,b,c",
+          "async": "false",
+          "status": "1",
+          "functionString": "function multiplyThree(a, b, c) {\n    return a * b * c;\n}",
+          "testCases": []
+        }
+      ]
+    },
+    {
+      "path": "square.js",
+      "functions": [
+        {
+          "name": "square",
+          "comment": "hgfds",
+          "params": "a",
+          "async": "false",
+          "status": "1",
+          "functionString": "function square(a) {\n    return a * a;\n}",
+          "testCases": []
+        }
+      ]
+    },
+    {
+      "path": "subtraction.js",
+      "functions": [
+        {
+          "name": "subtract",
+          "comment": "hbgvfcds",
+          "params": "a,b",
+          "async": "false",
+          "status": "1",
+          "functionString": "function subtract(a, b) {\n    return a - b;\n}",
+          "testCases": []
+        }
+      ]
+    },
+    {
+      "path": "sum.js",
+      "functions": [
+        {
+          "name": "sumTwo",
+          "comment": "",
+          "params": "a,b",
+          "async": "false",
+          "status": "2",
+          "functionString": "function sumTwo(a, b) {\n    return a + b;\n}",
+          "testCases": [
+            {
+              "description": "Sum two even numbers <sumTwo>",
+              "arguments": [
+                "2",
+                "4"
+              ],
+              "matcher": "toBe",
+              "expected": "6",
+              "passed": true
+            }
+          ]
+        },
+        {
+          "name": "sumThree",
+          "comment": "This function is not crucial for the program, and there is not enough time to test it.",
+          "params": "a,b,c",
+          "async": "false",
+          "status": "1",
+          "functionString": "function sumThree(a, b, c) {\n    return a + b + c;\n}",
+          "testCases": []
+        },
+        {
+          "name": "sumFour",
+          "comment": "",
+          "params": "a,b,c,d",
+          "async": "false",
+          "status": "-1",
+          "functionString": "function sumFour(a, b, c, d) {\n    return a + b + c + d;\n}",
+          "testCases": [
+            {
+              "description": "Sum odd numbers <sumFour>",
+              "arguments": [
+                "3",
+                "7",
+                "9",
+                "5"
+              ],
+              "matcher": "toBe",
+              "expected": "7",
+              "passed": false
+            },
+            {
+              "description": "Sum negative numbers <sumFour>",
+              "arguments": [
+                "-1",
+                "-2",
+                "-3",
+                "-4"
+              ],
+              "matcher": "toBe",
+              "expected": "-10",
+              "passed": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
