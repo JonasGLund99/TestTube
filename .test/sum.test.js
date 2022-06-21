@@ -4,15 +4,15 @@ const { sumThree } = require('../sum.js');
 
 const { sumFour } = require('../sum.js');
 
-test('Sum dis two numbers <sumTwo>', async () => {
-    const result = await sumTwo(20,49);
-    expect(result).toEqual(69);
+test('Sum two even numbers <sumTwo>', async () => {
+    const result = await sumTwo(2,4);
+    expect(result).toBe(6);
 })
-test('Sum four (this will also fail) <sumFour>', async () => {
-    const result = await sumFour(2,3,4,5);
-    expect(result).toBe(1);
+test('Sum odd numbers <sumFour>', async () => {
+    const result = await sumFour(3,7,9,5);
+    expect(result).toBe(7);
 })
-test('This might pass though <sumFour>', async () => {
-    const result = await sumFour(1,2,3,4);
-    expect(result).toBe(10);
+test('Sum negative numbers <sumFour>', async () => {
+    const result = await sumFour(-1,-2,-3,-4);
+    expect(result).toBe(-10);
 })
