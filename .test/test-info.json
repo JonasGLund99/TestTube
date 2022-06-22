@@ -1,37 +1,30 @@
 {
   "files": [
     {
+      "path": "arrays.js",
+      "functions": [
+        {
+          "name": "sumArray",
+          "comment": "hgfds",
+          "params": "A",
+          "async": "false",
+          "status": "1",
+          "functionString": "function sumArray(A) {\n    let sum = 0;\n    A.forEach(element => {\n        sum += Number(element);\n    });\n\n    return sum;\n}",
+          "testCases": []
+        }
+      ]
+    },
+    {
       "path": "divide.js",
       "functions": [
         {
           "name": "divide",
-          "comment": "",
+          "comment": "HGFDSA",
           "params": "a,b",
           "async": "false",
-          "status": "2",
+          "status": "1",
           "functionString": "function divide(a, b) {\n    return a / b;\n}",
-          "testCases": [
-            {
-              "description": "Division <divide>",
-              "arguments": [
-                "7",
-                "2"
-              ],
-              "matcher": "toBe",
-              "expected": "3.5",
-              "passed": true
-            },
-            {
-              "description": "Another division <divide>",
-              "arguments": [
-                "10",
-                "5"
-              ],
-              "matcher": "toStrictEqual",
-              "expected": "2",
-              "passed": true
-            }
-          ]
+          "testCases": []
         }
       ]
     },
@@ -40,64 +33,21 @@
       "functions": [
         {
           "name": "multiplyTwo",
-          "comment": "",
+          "comment": "HGFDS",
           "params": "a,b",
           "async": "false",
-          "status": "-1",
-          "functionString": "function multiplyTwo(a, b) {\n    return a * b;\n}",
-          "testCases": [
-            {
-              "description": "Multiply two numbers lager than zero. <multiplyTwo>",
-              "arguments": [
-                "10",
-                "55"
-              ],
-              "matcher": "toEqual",
-              "expected": "550",
-              "passed": true
-            },
-            {
-              "description": "Multiply with zero <multiplyTwo>",
-              "arguments": [
-                "175",
-                "0"
-              ],
-              "matcher": "toStrictEqual",
-              "expected": "0",
-              "passed": true
-            },
-            {
-              "description": "Multiply negative (will fail) <multiplyTwo>",
-              "arguments": [
-                "20",
-                "-1"
-              ],
-              "matcher": "toEqual",
-              "expected": "20",
-              "passed": false
-            }
-          ]
+          "status": "1",
+          "functionString": "function multiplyTwo(a, b) {\n    return a * b + 1;\n}",
+          "testCases": []
         },
         {
           "name": "multiplyThree",
-          "comment": "",
+          "comment": "hgfds",
           "params": "a,b,c",
           "async": "false",
-          "status": "2",
+          "status": "1",
           "functionString": "function multiplyThree(a, b, c) {\n    return a * b * c;\n}",
-          "testCases": [
-            {
-              "description": "Multiply three numbers <multiplyThree>",
-              "arguments": [
-                "1",
-                "2",
-                "3"
-              ],
-              "matcher": "toBe",
-              "expected": "6",
-              "passed": true
-            }
-          ]
+          "testCases": []
         }
       ]
     },
@@ -106,7 +56,7 @@
       "functions": [
         {
           "name": "square",
-          "comment": "I don't want to square the number - please give me the opportunity to cube it instead.",
+          "comment": "hgfds",
           "params": "a",
           "async": "false",
           "status": "1",
@@ -120,23 +70,12 @@
       "functions": [
         {
           "name": "subtract",
-          "comment": "",
+          "comment": "hbgvfcds",
           "params": "a,b",
           "async": "false",
-          "status": "2",
+          "status": "1",
           "functionString": "function subtract(a, b) {\n    return a - b;\n}",
-          "testCases": [
-            {
-              "description": "Subtract this please <subtract>",
-              "arguments": [
-                "10",
-                "2"
-              ],
-              "matcher": "toBe",
-              "expected": "8",
-              "passed": true
-            }
-          ]
+          "testCases": []
         }
       ]
     },
@@ -152,25 +91,59 @@
           "functionString": "function sumTwo(a, b) {\n    return a + b;\n}",
           "testCases": [
             {
-              "description": "Sum dis two numbers <sumTwo>",
+              "description": "Sum two even numbers <sumTwo>",
               "arguments": [
-                "20",
-                "49"
+                "2",
+                "4"
               ],
-              "matcher": "toEqual",
-              "expected": "69",
+              "matcher": "toBe",
+              "expected": "6",
               "passed": true
             }
           ]
         },
         {
           "name": "sumThree",
-          "comment": "I just dont feel like summing three numbers. I will test this one another day.",
+          "comment": "This function is not crucial for the program, and there is not enough time to test it.",
           "params": "a,b,c",
           "async": "false",
           "status": "1",
           "functionString": "function sumThree(a, b, c) {\n    return a + b + c;\n}",
           "testCases": []
+        },
+        {
+          "name": "sumFour",
+          "comment": "",
+          "params": "a,b,c,d",
+          "async": "false",
+          "status": "-1",
+          "functionString": "function sumFour(a, b, c, d) {\n    return a + b + c + d;\n}",
+          "testCases": [
+            {
+              "description": "Sum odd numbers <sumFour>",
+              "arguments": [
+                "3",
+                "7",
+                "9",
+                "5"
+              ],
+              "matcher": "toBe",
+              "expected": "7",
+              "passed": false
+            },
+            {
+              "description": "Sum negative numbers <sumFour>",
+              "arguments": [
+                "-1",
+                "-2",
+                "-3",
+                "-4"
+              ],
+              "matcher": "toBe",
+              "expected": "-10",
+              "passed": true
+            }
+          ]
         }
       ]
     }
